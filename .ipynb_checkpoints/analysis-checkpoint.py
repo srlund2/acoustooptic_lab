@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import sys
-sys.path[:0] = ["/home/fat-aunt-betty/github.com/lhillber/brownian/src", "/home/weird-uncle-charles/github.com/lhillber/brownian/src", "/home/touchy_grandma_irma/github.com/lhillber/brownian/src"]
+sys.path[:0] = ["/home/fat-aunt-betty/github.com/lhillber/brownian/src", "/home/weird-uncle-charles/github.com/lhillber/brownian/src", "/home/touchy_grandma_irma/github.com/lhillber/brownian/src", "/home/freaky-grandpa-melvin/github.com/lhillber/brownian/src"]
 from time_series import CollectionTDMS as ctdms
 from acoustic_entrainment import mic_response
 
