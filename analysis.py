@@ -121,7 +121,7 @@ def std_max(n, mu):
     mun = phi(1 - 1 / n) + mu
     sigman = phi(1 - 1 / (n * np.e)) - mun
     return sigman * np.pi * np.sqrt(1/6)
-    
+
 
 class System():
 
@@ -294,7 +294,6 @@ class System():
         """
         self.__snr_freq_cutoff = freq
         return None
-
     def get_phis(self) -> list:
         """
         
