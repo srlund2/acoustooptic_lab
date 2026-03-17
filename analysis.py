@@ -1,9 +1,12 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import sys
-sys.path[:0] = ["/home/itch/github.com/lhillber/brownian/src", "/home/fat-aunt-betty/github.com/lhillber/brownian/src", "/home/weird-uncle-charles/github.com/lhillber/brownian/src", "/home/touchy-grandma-irma/github.com/lhillber/brownian/src", "/home/freaky-grandpa-melvin/github.com/lhillber/brownian/src"]
-from time_series import CollectionTDMS as ctdms
-from acoustic_entrainment import mic_response
+import src.time_series as time_series
+import src.acoustic_entrainment as acoustic_entrainment
+# sys.path = "src"
+# sys.path[:0] = ["/home/itch/github.com/lhillber/brownian/src", "/home/fat-aunt-betty/github.com/lhillber/brownian/src", "/home/weird-uncle-charles/github.com/lhillber/brownian/src", "/home/touchy-grandma-irma/github.com/lhillber/brownian/src", "/home/freaky-grandpa-melvin/github.com/lhillber/brownian/src"]
+from src.time_series import CollectionTDMS as ctdms
+from src.acoustic_entrainment import mic_response
 
 def mic_correct(c, taps = 151, lfs = 0.68e-3):
     """
@@ -14,7 +17,7 @@ def mic_correct(c, taps = 151, lfs = 0.68e-3):
     :return: list of times of the collection data and 
              list of corrected signal of the collection data.
     """
-    import acoustic_entrainment
+    # import acoustic_entrainment
     import scipy.signal as sig
     import numpy as np
     # creating array of gain values using acoustic_entrainment.dBs_orig
