@@ -1,10 +1,10 @@
 import numpy as np
-from brownian import get_gamma, get_mass, get_viscosity, get_sound_speed, get_air_density
-from constants import kB
+from .brownian import get_gamma, get_mass, get_viscosity, get_sound_speed, get_air_density
+from .constants import kB
 from scipy.fft import rfft, rfftfreq, irfft
 from scipy.signal import get_window
 from scipy.special import hankel2, kv
-from time_series import TimeSeries
+from .time_series import TimeSeries
 from scipy.interpolate import interp1d
 
 def diaci_sensitivity(freqs, distance, c0=343.):

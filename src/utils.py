@@ -1,9 +1,9 @@
 import numpy as np
-from constants import kB
+from .constants import kB
 from scipy.integrate import cumulative_trapezoid
-from acoustic_entrainment import VelocityResponse
-from time_series import CollectionTDMS
-from brownian import get_params_from_abcRT, abc_guess, logbin_func, psd_func
+from .acoustic_entrainment import VelocityResponse
+from .time_series import CollectionTDMS
+from .brownian import get_params_from_abcRT, abc_guess, logbin_func, psd_func
 
 def sort_fnames(fnames, include=None, exclude=None):
     """

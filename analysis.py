@@ -3,8 +3,6 @@ import numpy as np
 import sys
 import src.time_series as time_series
 import src.acoustic_entrainment as acoustic_entrainment
-# sys.path = "src"
-# sys.path[:0] = ["/home/itch/github.com/lhillber/brownian/src", "/home/fat-aunt-betty/github.com/lhillber/brownian/src", "/home/weird-uncle-charles/github.com/lhillber/brownian/src", "/home/touchy-grandma-irma/github.com/lhillber/brownian/src", "/home/freaky-grandpa-melvin/github.com/lhillber/brownian/src"]
 from src.time_series import CollectionTDMS as ctdms
 from src.acoustic_entrainment import mic_response
 

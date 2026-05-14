@@ -4,8 +4,8 @@
 
 
 import numpy as np
-from constants import kB, units
-from brownian import get_mass, get_gamma
+from .constants import kB, units
+from .brownian import get_mass, get_gamma
 
 class Simulation:
     def __init__(self):
@@ -207,7 +207,7 @@ class Simulation:
 
 if __name__ == "__main__":
     import matplotlib.pyplot as plt
-    from brownian import PSD, MSD
+    from .brownian import PSD, MSD
 
     ### initialize
     sim = Simulation()

@@ -1,7 +1,7 @@
 import json
-from uid import dict_uid
+from .uid import dict_uid
 from os import path, pardir, getcwd, makedirs
-from constants import units
+from .constants import units
 from copy import deepcopy
 from numpy.linalg import norm, inv
 import numpy as np

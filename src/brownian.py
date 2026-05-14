@@ -5,14 +5,13 @@
 
 from time import time
 import numpy as np
-from constants import kB
+from .constants import kB
 import matplotlib.pyplot as plt
 #from matplotlib.mlab import stride_windows
 from copy import copy
 from numba import jit
 from cmath import sqrt
 from joblib import Parallel, delayed
-from scipy.integrate import simps
 from scipy.signal import welch, detrend
 sigdetrend = detrend # Alias
 

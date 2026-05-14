@@ -6,7 +6,7 @@
 import os
 import numpy as np
 import matplotlib.pyplot as plt
-from src.constants import units
+from .constants import units
 from copy import copy
 from scipy.integrate import simpson
 from scipy.optimize import curve_fit, minimize
@@ -14,7 +14,7 @@ from nptdms import TdmsFile
 from scipy.signal import butter, sosfiltfilt, firwin2, minimum_phase, tf2sos, get_window
 from scipy.fft import rfft, rfftfreq, irfft
 from joblib import Parallel, delayed
-from brownian import (
+from .brownian import (
     partition, bin_funcN, detrend, PSD, MSD, ACF, AVAR, NVAR, HIST, logbin_func
 )
 
@@ -38,18 +38,6 @@ except Exception:
         if axis != 0:
             windows = np.swapaxes(windows, 0, axis)
         return windows.T
-    
-from constants import units
-from copy import copy
-from scipy.integrate import simpson
-from scipy.optimize import curve_fit, minimize
-from nptdms import TdmsFile
-from scipy.signal import butter, sosfiltfilt, firwin2, minimum_phase, tf2sos, get_window
-from scipy.fft import rfft, rfftfreq, irfft
-from joblib import Parallel, delayed
-from brownian import (
-    partition, bin_funcN, detrend, PSD, MSD, ACF, AVAR, NVAR, HIST, logbin_func
-    )
 
 
 
